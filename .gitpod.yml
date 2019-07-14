@@ -1,3 +1,4 @@
+
 ports:
 - port: 8080
   onOpen: open-preview
@@ -13,3 +14,7 @@ tasks:
 github:
     prebuilds:
         pullRequestsFromForks: true
+
+vscode:
+  extensions:
+    - test.on-debug-initial-configurations@0.0.1-946d68c3c41976ea949a3e7a67fe5b23a246ed9fa452606ed32a69913ee89b82
