@@ -1,3 +1,4 @@
+
 ports:
 - port: 8080
   onOpen: open-preview
@@ -13,3 +14,7 @@ tasks:
 github:
     prebuilds:
         pullRequestsFromForks: true
+
+vscode:
+  extensions:
+    - test.on-debug-adapter-protocol-tracker@0.0.1-8e3a6de7abff27e829c34602633017867ce64c6eab094a2c57b55075c211d9f4
