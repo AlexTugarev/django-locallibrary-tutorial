@@ -1,3 +1,4 @@
+
 ports:
 - port: 8080
   onOpen: open-preview
@@ -13,3 +14,7 @@ tasks:
 github:
     prebuilds:
         pullRequestsFromForks: true
+
+vscode:
+  extensions:
+    - ms-python.python@2019.6.22090-71c46522b05b3e7c8b0636584858a820c02d9cb855fa3a0834245da60e530487
