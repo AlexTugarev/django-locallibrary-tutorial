@@ -1,3 +1,4 @@
+
 ports:
 - port: 8080
   onOpen: open-preview
@@ -13,3 +14,7 @@ tasks:
 github:
     prebuilds:
         pullRequestsFromForks: true
+
+vscode:
+  extensions:
+    - test.txt@0.0.1-CWmGsWSYmS7+8q41zv27BQ==
