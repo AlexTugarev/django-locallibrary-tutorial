@@ -1,15 +1,16 @@
 ports:
-- port: 8080
-  onOpen: open-preview
+  - port: 9001
+    onOpen: open-preview
+  - port: 9002
+    onOpen: open-browser
+  - port: 9005-9010
+    onOpen: ignore
 tasks:
-- init: >
-    python3 -m pip install -r requirements.txt &&
-    python3 manage.py migrate
-  command: >
-    echo "from locallibrary.settings import *" > locallibrary/local_settings.py &&
-    echo "ALLOWED_HOSTS = ['*']" >> locallibrary/local_settings.py &&
-    export DJANGO_SETTINGS_MODULE=locallibrary.local_settings &&
-    python3 manage.py runserver 0.0.0.0:8080
-github:
-    prebuilds:
-        pullRequestsFromForks: true
+  - command: python3 -m http.server 9001
+    name: Open 9001 in Preview
+  - command: python3 -m http.server 9002
+    name: Open 9002 in Browser
+  - command: python3 -m http.server 9003
+    name: SHOW notification for 9003
+  - command: python3 -m http.server 9005
+    name: NO notification for 9005
