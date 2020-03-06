@@ -1,3 +1,5 @@
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](http://at-replace-passport-github.staging.gitpod-dev.com/#https://github.com/mdn/django-locallibrary-tutorial) 
+
 # Django Local Library
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/django-locallibrary-tutorial)
