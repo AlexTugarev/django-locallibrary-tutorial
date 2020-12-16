@@ -13,3 +13,9 @@ tasks:
 github:
     prebuilds:
         pullRequestsFromForks: true
+
+vscode:
+  extensions:
+    - golang.go@0.19.0
+    - graphql.vscode-graphql
+    - pucelle.vscode-css-navigation@1.9.0:6197f65237e7dfcd4e118fe96108a47b
